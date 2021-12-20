@@ -1,0 +1,61 @@
+#include <stdio.h>\
+
+int main() {
+
+	/* int - 32비트(4바이트), 정수를 담는데 쓰임. 
+	int a = 5;
+	int b = 3; 
+
+	int hap = a + b; 
+	int cha = a - b;
+	int gop = a * b;
+	int mok = a / b; //정수 나누기 정수에선 정수인 몫만 표현.
+	int namuji = a % b;
+
+
+	printf("%d + %d = %d\n",a, b, hap);//'%d'는 정수를 출력 
+	printf("%d - %d = %d\n", a, b, cha);
+	printf("%d * %d = %d\n", a, b, gop);
+	printf("%d / %d = %d\n", a, b, mok);
+	printf("%d %% %d = %d\n", a, b, namuji); //%라는 기호를 출력하고 싶은 경우 %%로 표기한다.
+	*/
+
+	//int - 32비트(4바이트), 정수를 담는데 쓰임. 
+	//float - 32비트(4바이트), 실수를 담는데 쓰임. 기본 소숫점 6자리 까지 표현.
+	// ctrl + h 로 단어 를 한번에 바꿔줄 수 있다.
+
+
+	/*float a = 9.8;
+	float b = 3.14;
+
+	float hap = a + b;
+	float cha = a - b;
+	float gop = a * b;
+	float mok = a / b; //정수 나누기 정수에선 정수인 몫만 표현.
+
+
+	printf("%f + %f = %f\n", a, b, hap);//'%f'는 정수를 출력 
+	printf("%f - %f = %f\n", a, b, cha);
+	printf("%f * %f = %f\n", a, b, gop);
+	printf("%f / %f = %f\n", a, b, mok); //%라는 기호를 출력하고 싶은 경우 %%로 표기한다.
+	*/
+
+
+	//double - 64비트(8바이트), 실수를 담는데 쓰임. 저장공간이 두배 - 정확도가 증가
+
+	double a = 9.8;
+	double b = 3.14;
+
+	double hap = a + b;
+	double cha = a - b;
+	double gop = a * b;
+	double mok = a / b; 
+
+
+	printf("%f + %f = %f\n", a, b, hap); 
+	printf("%f - %f = %f\n", a, b, cha);
+	printf("%f * %f = %f\n", a, b, gop);
+	printf("%f / %f = %f\n", a, b, mok);
+
+	/*	float은 부동 소숫점(floating piont)	*/
+}
