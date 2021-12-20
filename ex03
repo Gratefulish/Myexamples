@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main() {
+
+	int a; //변수 선언, a라는 그릇을 만드는 느낌.
+
+	a = 3; //a에 3이라는 값을 대입. 
+
+	printf("%d\n", a); //'%d'는 정수를 출력함. 
+
+	/* 만약 진짜 문자 a 를 표현하고 싶다면? 
+	
+	printf("%c\n", 'a'); 로 표현 (c는 문자 출력) */
+
+	a = 5; //a에 5 대입, 3이라는 값은 지워지고 5라는 값이 대입됨.
+
+	printf("%d\n", a);
+
+
+}
+
+
+//ex03-2
+
+#include <stdio.h>
+
+int main() {
+	int a = 2; //선언과 동시에 대입 가능. (초기화)
+	int b = 3;
+
+	printf("%d + %d = %d", a, b, a + b);
+
+
+	//변수 이름에는 알파벳 대소문자, _, 숫자(첫번째 글자는 안됨.) ex) 2a = x, a2 = o
+
+	int A; 
+	int c; 
+	int under_score; 
+	int a2;
+	int _; 
+
+
+}
+
+
+//ex03-3
+
+
+#include <stdio.h>
+
+int main() {
+
+	int a = 2; 
+	int b = 3; 
+	int hap = a + b; 
+
+	printf("%d + %d = %d\n", a, b, hap);
+
+}
