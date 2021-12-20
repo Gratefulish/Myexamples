@@ -1,0 +1,19 @@
+/* Hello, wolrd! Gratefulish example #01 */
+
+#include <stdio.h> //stdio.h - 약간 사전같은 느낌. printf 라는 매개를 무엇인지 알려준다.
+
+int main(){ 
+
+	printf("Hello, world!\n"); // "\n"(줄바꿈)은 백슬래쉬임에 주의. ';'는 문장의 끝을 나타내니 항상 붙이고 습관을 붙일것.
+	printf("Hello, world!\nHello, world!");
+
+	printf("\n");//example 1
+	printf("동해물과 백두산이\n마르고\n닳도록\n");
+
+	printf("\n");//example 2
+	printf("동해물과 백두산이\n");
+	printf("마르고\n닳도록\n");
+
+
+
+} //괄호는 열어준 만큼 닫음.
