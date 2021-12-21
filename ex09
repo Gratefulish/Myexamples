@@ -1,0 +1,73 @@
+/*
+
+1. 두 숫자를 입력받아서 그 숫자들의 합을 출력하는 프로그램을 만들 것.
+
+*/
+
+
+#include <stdio.h>
+
+int main() {
+
+	double a, b;
+
+	scanf_s("%lf%lf", &a, &b);
+		
+	double hap = a + b; //float 써도 괜찮을 듯
+
+
+	printf("%.0lf", hap); 
+
+
+}
+
+/*
+
+2. 체중과 키를 입력받아서 체질량 지수를 구하는 프로그램을 만드시오.
+
+체질량지수 = w/t^2
+
+*/
+
+
+#include <stdio.h>
+
+int main() {
+
+	float w, t;
+	
+
+	printf("체중과 키를 순서대로 입력해주세요(키는 m):"); //1.75, 75 = 24.49
+
+	scanf_s("%f%f", &w, &t);
+
+	float t2 = t * t;
+	
+	float bmi = w / t2;
+
+	printf("당신의 BMI는 %.2f 입니다.\n", bmi);
+
+
+}
+
+
+/*
+
+알파벳을 입력받아서 다음 알파벳을 출력하는 프로그램을 만드십시오.
+
+A = 65, B = 66, C = 67
+
+*/
+
+#include <stdio.h>
+
+
+int main() {
+
+	char text; //4바이트 문자 담음.
+
+	scanf_s("%c", &text);    //scanf_s 사용
+
+	printf("%c", text +1);
+
+}
