@@ -1,0 +1,85 @@
+example 01 - int
+
+#include <stdio.h>
+
+int main() {
+
+	//변수 선언
+
+	int a, b;
+
+	scanf_s("%d%d", &a, &b); //&: 포인터 scanf를 쓸 때 꼭 포인터를 쓴다. (scanf_s를 쓰자. scanf 쓰면 오류남.) %d%d, %d %d 띄어쓰기 상관 없음.
+
+	int hap = a + b, 
+		cha = a - b, 
+		gop = a * b, 
+		mok = a / b; 
+
+	printf("%d + %d = %d\n", a, b, hap);
+	printf("%d - %d = %d\n", a, b, cha);
+	printf("%d * %d = %d\n", a, b, gop);
+	printf("%d / %d = %d\n", a, b, mok);
+
+
+}
+
+
+example 02 - float
+
+#include <stdio.h>
+
+
+//실수 자료형으로 표현 
+
+
+int main() {
+
+	//변수 선언
+
+	float a, b; 
+
+	scanf_s("%f%f", &a, &b);
+
+	float //double - 8 바이트, float - 4바이트
+		hap = a + b,			//double로 입력을 받을 때는 scanf 특유의 작동 방식 때문에 %lf로 받음. ex) scanf_s("%lf", hap);
+		cha = a - b,
+		gop = a * b,
+		mok = a / b;
+
+	printf("%f + %f = %f\n", a, b, hap);
+	printf("%f - %f = %f\n", a, b, cha);
+	printf("%f * %f = %f\n", a, b, gop);
+	printf("%f / %f = %f\n", a, b, mok);
+
+
+}
+
+
+example 03 - double
+
+#include <stdio.h>
+
+
+int main() {
+
+	double a, b; //8바이트 double 사용함.
+
+	scanf_s("%lf%lf", &a, &b);
+
+
+	double
+		hap = a + b,
+		cha = a - b,
+		gop = a * b,
+		mok = a / b;
+
+
+	printf("%f + %f = %f\n", a, b ,hap);
+	printf("%f - %f = %f\n", a, b, cha);
+	printf("%f * %f = %f\n", a, b, gop);
+	printf("%f / %f = %f\n", a, b, mok);
+
+
+}
+
+
