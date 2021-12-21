@@ -1,0 +1,83 @@
+example 01 - 산술 연산자
+
+/* 
+
+산술 연산자
+
++ - * / % = ...
++= -= /= %=
+++ --
+
+*/
+
+#include <stdio.h>
+
+int main() {
+
+	int a = 5; 
+	int b = 4; 
+	printf("a는 원래 %d였다.\n", a);
+	a = a + 3; // = : 대입 연산, 는 절대 같다는 뜻이 아닌 좌변을 우변에  대입한다는 뜻.
+	printf("3을 더했더니 %d이 됐다.", a);
+	a += 4; //는 a = a + 4와 같다. 
+	b++; // b = b + 1 = b += 1임. 
+
+}
+
+example 02 - 연산자
+
+#include <stdio.h>
+
+int main() {
+
+	int a = 10; 
+
+	printf("a는 원래 %d이었다.\n", a);
+	a = a + 1; 
+	printf("1을 더했더니 %d이 됐다.\n", a );
+	a += 1; 
+	printf("1을 또 더했더니 %d가 됐다.\n", a); 
+	a--; // a = a - 1; 
+	printf("1을 뺐더니 %d이 됐다.\n", a);
+
+}
+
+
+example 04 - 전치
+
+//전치
+
+#include <stdio.h>
+
+int main() {
+
+	int a = 10; 
+	int b; 
+
+
+
+	printf("====전치 증가 연산====\n"); 
+	b = ++a; //전치 = a에 먼저 1을 더하고, b의 값에 대입.
+	printf("a : %d\n", a);
+	printf("b : %d\n", b);
+
+
+}
+
+example 04 - 후치 
+
+//후치
+
+#include <stdio.h>
+
+int main() {
+
+	int a = 10;
+	int b;
+
+	printf("====전치 증가 연산====\n");
+	b = a++; //후치 = b에 먼저 a값을 더하고 a에 1을 더한다.
+	printf("a : %d\n", a);
+	printf("b : %d\n", b);
+
+}
