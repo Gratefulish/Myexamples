@@ -1,0 +1,69 @@
+example 01 - 비교연산자
+
+#include <stdio.h>
+
+/*
+
+비교 연산자
+
+*/
+
+
+int main() {
+
+	int a, b; 
+
+	scanf_s("%d%d", &a, &b); 
+
+	// bool: 진리값 저장용 변수 (1바이트 = 8비트) 
+	bool p = a > b; //이 명제가 참이면 1, 거짓이면 0이 대입됨.
+	bool q = a < b; 
+	bool r = a == b; // ==: 같다. 
+
+	printf("%d\n", p);
+	printf("%d\n", q);
+	printf("%d\n", r);
+
+	
+	//2 > 3 = 거짓 
+	//참 = 1, 거짓 = 0
+
+	/*
+	
+	a >= b, a는 b보다 크거나 같다 
+	a <= b, a는 b보다 작거나 같다. 
+	a != b, a는 b가 아니다.
+
+	*/
+
+
+}
+
+example 02 - 논리 연산자
+
+#include <stdio.h>
+
+/*
+
+논리 연산자 (그리고, 또는, ...)
+
+// && || !  
+
+*/
+
+int main() {
+	int a; 
+	scanf_s("%d", &a);
+
+	bool p = (a >= 1) && (a <= 10); // 1 ≤ a ≤ 10 과 같음.
+	bool q = a == 3 || a == 7;
+	bool r = !q; 
+
+	printf("%d\n", p);
+	printf("%d\n", q);
+	printf("%d\n", r);
+
+}
+
+
+
