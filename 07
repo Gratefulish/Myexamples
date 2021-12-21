@@ -1,0 +1,69 @@
+example 01 - ASCII 
+
+
+#include <stdio.h>
+
+
+
+/*    
+
+char: 1 byte 정수형, int - 4 byte, long - 4 byte long long - 8 byte다. 
+character: 문자 (반각문자 ABCabc123_+/;\#% ... 한자, 한글, 일본어, 유니코드 
+
+
+
+*/
+
+
+
+int main() {
+
+	char a = 67; 
+
+	printf("%c\n", a);
+	printf("%c\n", 'C'); // 'C' == 67, 'F' == 70 ... 
+
+	//ASCII : American Standard 아스키코드
+
+
+
+}
+
+
+example 02 - Word to ASCII Cord
+
+#include <stdio.h>
+
+
+//입력한 문자의 아스키코드 값을 알려주는 프로그램.
+
+int main() {
+
+	char a; 
+
+
+
+	printf("문자 입력하세요 :");
+	scanf_s("%c", &a); //%c 는 문자를 출력함
+	printf("당신이 입력한 문자는 %c입니다\n", a);
+	printf("당신이 입력한 문자 %c의 ASCII 값 : %d\n", a, a);
+
+	//%d 는 정수 출력, %c는 문자 출력
+
+
+}
+
+example 02 - ASCII Cord to Word
+
+#include <stdio.h>
+
+int main() {
+
+	int a; 
+
+	printf("숫자를 입력하세요 :");
+	scanf_s("%d", &a);
+	printf("당신이 입력한 숫자 : %d\n", a);
+	printf("당신이 입력한 숫자의 아스키 문자 : %c\n", (char)a); //변환자 사용
+
+}
