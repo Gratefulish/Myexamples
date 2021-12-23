@@ -1,0 +1,67 @@
+example 01 -  while
+
+//반복문 while
+
+#include <stdio.h>
+
+
+int main() {
+
+	int i = 1;
+
+
+	while (i <= 10) {
+
+		printf("%d\n", i);
+		i++;
+	}
+}
+
+example 02 - do while
+
+// do-while = while의 실행 조건을 만족시키지 않아도 한 번은 실행함.
+
+
+#include <stdio.h>
+
+int main() {
+	int i = 15;
+
+	do {// 무조건 한 번은 실행함.
+
+		printf("%d\n", i);
+		i++;
+	} while (i <= 10);
+}
+
+
+example 03 - 무한 반복
+
+//무한 반복
+
+
+#include <stdio.h>
+
+int main() {
+	int i = 1; 
+
+	while (true) { //조건이 어떠한 경우라도 참이므로 무한 반복함.
+		printf("%d ", i);
+		i++;
+	}
+}
+
+example 04 - programming
+
+#include <stdio.h>
+
+int main() {
+	int n; 
+
+	do {
+		printf("제발 0을 입력해주세요.\n");
+		scanf_s("%d", &n);
+	} while (n != 0); //n != 0, n이 0이 아니다
+	printf("드디어 0을 입력하셨군요.");
+}
+
