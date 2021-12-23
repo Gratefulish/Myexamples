@@ -1,0 +1,104 @@
+example 01 - break;
+
+// break : 반복문 한 개를 빠져나옴. 
+
+//숫자 입력 -> 숫자 출력 
+// 1번 째: 7
+// 2번 째: 5 
+// .. 
+// 15번 째
+
+#include <stdio.h>
+
+int main() {
+
+	for (int i = 1; true; i++) {
+		int k; 
+		scanf_s("%d", &k); 
+
+		if (k == 0) {
+			break; 
+		}
+		printf("%d번 째: %d\n", i, k);
+	}
+}
+
+example 02 - continue
+
+// continue 
+
+#include <stdio.h>
+
+/*
+int main() {
+	int n;
+	scanf_s("%d", &n);
+
+	//1+2+4+5+7+8+10+11+13 3의 배수를 제외한 모든 수의 합.
+
+	int sum = 0;
+
+	for (int i = 1; i <= n; i++) {
+		if (i % 3 != 0) {
+			sum += i;
+		}	
+	}
+	printf("%d", sum);
+}
+*/
+
+int main() {
+	int n;
+	scanf_s("%d", &n);
+
+	//1+2+4+5+7+8+10+11+13 3의 배수를 제외한 모든 수의 합.
+
+	int sum = 0;
+
+	for (int i = 1; i <= n; i++) {
+		if (i % 3 == 0) {
+			continue; //loop를 벗어남. 
+		}
+			sum += i;
+	}
+	printf("%d", sum);
+}
+
+example 03 - 중첩 for문
+
+//중첩 for문
+
+
+/*
+*** 
+***
+***
+
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+
+을 출력해보자.
+*/
+
+#include <stdio.h>
+
+int main() {
+	int n; 
+	scanf_s("%d", &n);
+
+	for (int i = 1; i <= n; i++) {//중첩 for문을 쓸 때, 변수 이름을 다르게 해주는게 좋음. 
+		for (int j = 1; j <= i; j++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	
+}
