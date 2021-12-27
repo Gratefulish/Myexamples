@@ -1,0 +1,86 @@
+example 01 - reverse output
+
+/*
+1 - 입력받은 숫자들을 거꾸로 출력
+2 - 최대, 최소
+3 - 짝수의 갯수
+*/
+
+#include <stdio.h>
+
+int main(void) {
+	int n; // 개수 
+	int arr[1000];
+
+	printf("입력할 숫자의 개수 입력: ");
+	scanf_s("%d", &n);
+
+	for (int i = 0; i < n; i++) {
+		scanf_s("%d", &arr[i]);//배열을 순서대로 n개 만큼 저장 
+
+	}
+	for (int i = n - 1; i >= 0; i--) {//배열은 0부터 시작, arr 배열의 n개째 부터 거꾸로 출력. 
+		printf("%d ", arr[i]);//arr에 저장된 숫자 출력
+
+	}
+}
+
+example 02 - max, min
+
+//2 - 최대, 최소
+
+#include <stdio.h>
+
+int main() {
+	int n; 
+	int arr[1000];
+
+	scanf_s("%d", &n);
+
+	for (int i = 0; i < n; i++) {
+		scanf_s("%d", &arr[i]);//n개 만큼 숫자를 받아옴.
+
+	}
+	int max = arr[0]; //max에 arr 배열의 첫숫자를 대입.
+	for (int i = 1; i < n; i++) { //i가 n-1 이 될 때까지 for문을 반복함.
+		if (max < arr[i]) max = arr[i];//max에 arr첫숫자부터 비교를해서 max보다 arr[i]가 더클경우 대입함.
+	}
+	printf("%d", max); //최댓값 출력
+}
+
+/*
+만약 최솟값을 구하고 싶다면 
+
+int min = arr[0]; 
+for (int i = 0; i < n; i++) {
+	if (min > arr[i]) min = arr[i]; 
+}
+*/
+
+
+example 03 - 짝수의 개수
+
+//짝수의 개수를 세주는 프로그램.
+
+#include <stdio.h>
+
+int main() {
+	int n; 
+	int arr[1000];
+
+	scanf_s("%d", &n);
+
+	for (int i = 0; i < n; i++) {
+		scanf_s("%d", &arr[i]); 
+	}
+
+	int cnt = 0; 
+	for (int i = 0; i < n; i++) {
+		if (arr[i] % 2 == 0) {
+			cnt++; 
+
+		}
+	}
+	printf("짝수의 개수 : %d\n", cnt);
+
+}
