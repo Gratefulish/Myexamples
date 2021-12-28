@@ -1,0 +1,73 @@
+example 01 - sting
+
+//문자열
+
+#pragma warning(disable:4996)
+#include <stdio.h>
+
+int main() {
+
+	//char arr[] = "Hello, world!"; // \0 = null, 문자열의 끝을 알림.
+	char st[100];
+	//printf("%s\n", arr);
+
+
+	scanf_s("%s", st, sizeof(st));//string을 입력 받을땐 &를 붙이지 않는다.\
+	
+
+	//문자열을 scanf_s 로 받을 때는 배열의 크기를 같이 입력해줘야 한다.  
+	printf("%s\n", st);
+
+
+	//printf("배열의 크기 : %d\n ", sizeof(arr) / sizeof(char));//14가 출력됨.
+
+}
+
+example 02 - strlen, string.h
+
+#include <stdio.h> //헤더파일, 함수들이 정의 되어 있음. 
+#include <string.h>
+
+int main() {
+	char str[] = "Hello from the oher side"; 
+
+	int len; 
+	len = strlen(str); //함수가 반환하는 값을 len에다 저장할 수 있음.
+	
+	printf("문자열의 길이는 %d\n", len); //24 출력
+
+
+
+}
+
+example 03 - strcmp
+
+#include <stdio.h> //헤더파일, 함수들이 정의 되어 있음. 
+#include <string.h>
+
+/*
+int main() {
+	char str1[] = "Hello";
+	char str2[100];
+
+	strcpy_s(str2, str1); //문자열 전체를 다른 문자열로 복사함. 복사할 문자열, 붙여넣을 문자열 순으로 사용. strcpy_s 로 사용함.
+
+	printf("str2의 값 : %s", str2);
+}
+
+
+int main() {
+	char str[100] = "Hello";
+	
+	strcat_s(str, " Wolrd!");//문자열에 덧붙임. strcat_s로 사용
+	printf("str의 값 : %s\n", str);
+}
+*/
+
+int main() {
+	char str1[100] = "sample"; //c++은 string이라는 새로운 자료형이 있지만 c에서는 char을 사용해야 한다.
+	char str2[] = "simple";
+
+	int cmp = strcmp(str1, str2); //str1이 str2보다 사전순으로 앞쪽에 있다면 -1을 반환을 함. 반대는 1, 같다면 0을 반환.
+	printf("%d\n", cmp); 
+}
