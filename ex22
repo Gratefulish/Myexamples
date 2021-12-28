@@ -1,0 +1,57 @@
+example 01 - 2 dimension array
+
+//다차원 배열
+//2차원 배열
+
+#include <stdio.h>
+
+int main() {
+	int arr[3][4] = { //3행 4열 세로 3개 가로 4개 배열임.
+	{1, 2, 3, 4}, 
+	{5, 6, 7, 8},
+	{9, 10, 11, 12}
+	};
+	for (int i = 0; i < 3; i++){
+		for (int j = 0; j < 4; j++) {//j가 3이 될때까지 반복하다 다시 처음으로 for문으로 돌아감. 
+			printf("%d ", arr[i][j]);
+
+		}
+		printf("\n");
+	}
+}
+
+example 02 - Pascal's triangle
+
+//파스칼의 삼각형.
+
+/*
+1
+11
+121
+1331
+...
+
+j == 0 || j == i -> 1
+p[i][j] = 1; - 행의 처음 열과 끝열은 1이어야 하므로
+i행 j열 = [i-1 j-1] + [i-1 j]
+*/
+
+#include <stdio.h>
+
+int main() {
+
+	int p[10][10];
+
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j <= i; j++) {
+			if (j == 0 || j == i) {
+				p[i][j] = 1;
+			}
+			else {
+				p[i][j] = p[i - 1][j - 1] + p[i - 1][j];
+			}
+			printf("%d ", p[i][j]);
+		}
+		printf("\n");
+	}
+}
